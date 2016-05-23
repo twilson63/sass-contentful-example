@@ -1,0 +1,25 @@
+{
+  "name": "customize-sass-from-contentful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass sass/app.scss app.css",
+    "build-scss": "node scripts/create-scss.js > sass/app.scss",
+    "build": "npm run build-scss & npm run build-css",
+    "start": "w3"
+  },
+  "keywords": [],
+  "author": "Tom",
+  "license": "ISC",
+  "devDependencies": {
+    "contentful": "^3.3.6",
+    "ejs": "^2.4.1",
+    "w3": "^0.6.1"
+  },
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "zero-config": "^7.0.1"
+  }
+}
